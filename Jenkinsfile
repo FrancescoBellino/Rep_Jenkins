@@ -3,7 +3,7 @@ pipeline {
 	stages {
 		stage('Build') {
 			steps {
-				checkout scm
+				//checkout scm
 				sh 'make'
 			}
 			post {
