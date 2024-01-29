@@ -1,9 +1,11 @@
 pipeline {
 	agent any
-	stage('Build') {
-		steps {
-			checkout scm
-			bat 'more main.c'
+	stages {
+		stage('Build') {
+			steps {
+				checkout scm
+				bat 'more main.c'
+			}
 		}
 	}
 }
