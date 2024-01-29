@@ -1,5 +1,5 @@
 pipeline {
-	agent { docker { image 'gcc' } }
+	agent { dockerContainer { image 'gcc' } }
 	stages {
 		stage('Build') {
 			steps {
