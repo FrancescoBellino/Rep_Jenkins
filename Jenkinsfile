@@ -1,10 +1,10 @@
 pipeline {
-	agent { dockerContainer { image 'gcc' } }
+	agent any
 	stages {
 		stage('Build') {
 			steps {
 				//checkout scm
-				sh 'make'
+				bat 'make'
 			}
 			post {
 				success {
