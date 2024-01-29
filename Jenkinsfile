@@ -4,7 +4,7 @@ pipeline {
 		stage('Build') {
 			steps {
 				checkout scm
-				bat 'make check'
+				sh 'ls'
 			}
 			post {
 				success {
