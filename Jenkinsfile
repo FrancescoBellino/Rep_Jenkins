@@ -4,7 +4,7 @@ pipeline {
 		stage('Build') {
 			steps {
 				checkout scm
-				bat 'gcc -Wall -c main.c'
+				bat 'make check'
 			}
 			post {
 				success {
