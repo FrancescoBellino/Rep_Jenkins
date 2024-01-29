@@ -10,7 +10,7 @@ pipeline {
 				success {
 					echo 'OK'
 				}
-				failed {
+				failure {
 					echo 'Fail'
 				}
 			}
