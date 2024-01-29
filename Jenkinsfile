@@ -4,7 +4,15 @@ pipeline {
 		stage('Build') {
 			steps {
 				checkout scm
-				bat 'more main.c'
+				bat 'make'
+			}
+			post {
+				success {
+					echo 'OK'
+				}
+				failed {
+					echo 'Fail'
+				}
 			}
 		}
 	}
