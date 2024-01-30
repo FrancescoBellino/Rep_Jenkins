@@ -9,7 +9,7 @@ int main(int argc, char** argv)
 	if(numero%2==0){
 		printf("Il numero inserito è pari\n");
 	}else{
-		printf("Il nuemero inserito è dispari\n");
+		printf("Il numero inserito è dispari\n");
 	}
 
 	return 0;
