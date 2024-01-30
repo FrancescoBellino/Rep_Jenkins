@@ -7,7 +7,7 @@ int main(int argc, char** argv)
 	printf("Inserire un numero intero: ");
 	scanf("%d", &numero);
 	if(numero%2==0){
-		printf("Il numero inserito è pari\n");
+		printf("Il numero inserto è pari\n");
 	}else{
 		printf("Il numero inserito è dispari\n");
 	}
